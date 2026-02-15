@@ -85,7 +85,7 @@
         // 4. Send data to Backend
         async function sendData(name, rollNo, lat, lng) {
             try {
-                const response = await fetch('http://localhost:3000/submit-attendance', {
+                const response = await fetch('https://attendanceapp-02te.onrender.com/submit-attendance', {
                     method: 'POST',
                     headers: {'Content-Type': 'application/json'},
                     body: JSON.stringify({ name, rollNo, userId, lat, lng })
@@ -118,4 +118,5 @@
         }
     </script>
 </body>
+
 </html>
